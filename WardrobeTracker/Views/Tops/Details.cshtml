@@ -1,0 +1,51 @@
+﻿@model WardrobeTracker.Models.Top
+
+@{
+    ViewBag.Title = "Details";
+}
+
+
+<div class="detailspagebody">
+    <hr />
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Details | Tops</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-9">
+            <ul class="dl-horizontal">
+                <li>
+                    @Html.DisplayFor(model => model.Name)
+                </li>
+                <li>
+                    @Html.DisplayFor(model => model.Color.Name)
+                </li>
+                <li>
+                    @Html.DisplayFor(model => model.Description.Name)
+                </li>
+                <li>
+                    @Html.DisplayFor(model => model.Occasion.Name)
+                </li>
+                <li>
+                    @Html.DisplayFor(model => model.Season.Name)
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12"> 
+            <img  src="~/Content/Images/WhiteSweaterGreyBowDetail.jpg" class="thumbnail img-responsive" alt="tattered blue jeans" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-9">
+            <p>
+                @Html.ActionLink("Edit", "Edit", new { id = Model.TopsID }) |
+                @Html.ActionLink("Back to List", "Index")
+            </p>
+        </div>
+        <div class="col-md-3">
+        </div>
+    </div>
+</div>

@@ -1,0 +1,60 @@
+﻿@model IEnumerable<WardrobeTracker.Models.Top>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h1>Tops</h1>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<div class="row">
+    <div class="col-md-12">
+        <table class="table table-striped table-hover dl-horizontal">
+            <tr>
+                <th>
+                    <h3>Description</h3>
+                </th>
+                <th>
+                </th>
+                <th>
+                </th>
+                <th>
+                </th>
+                <th>
+                </th>
+                <th>
+                </th>
+                <th>
+                </th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Color.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Description.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Occasion.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Season.Name)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", new { id = item.TopsID }) |
+                        @Html.ActionLink("Details", "Details", new { id = item.TopsID }) |
+                        @Html.ActionLink("Delete", "Delete", new { id = item.TopsID })
+                    </td>
+                </tr>
+            }
+        </table>
+        </div>
+</div>

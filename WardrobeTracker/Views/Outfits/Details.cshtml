@@ -1,0 +1,186 @@
+﻿@model WardrobeTracker.Models.Outfit
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Outfit</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AccessoriesID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AccessoriesID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.JewelryID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.JewelryID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CoatID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CoatID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ColorID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ColorID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OccasionID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OccasionID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Photo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Photo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Bottom.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Bottom.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Color.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Color.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description1.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description1.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Dress.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Dress.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Jewelry.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Jewelry.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Legwear.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Legwear.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Legwear1.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Legwear1.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Outfits1.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Outfits1.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Outfit1.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Outfit1.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Outfits11.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Outfits11.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Outfit2.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Outfit2.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Season.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Season.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Top.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Top.Name)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.OutfitsID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

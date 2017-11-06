@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="5d7066c0a47a4f84915ff8abded744af" Name="Diagram1">
+        <EntityTypeShape EntityType="WardrobeTrackerModel.Bottom" Width="1.5" PointX="3" PointY="21.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="WardrobeTrackerModel.Coat" Width="1.5" PointX="6" PointY="21.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="WardrobeTrackerModel.Color" Width="1.5" PointX="0.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WardrobeTrackerModel.Description" Width="1.5" PointX="0.75" PointY="21.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="WardrobeTrackerModel.Dress" Width="1.5" PointX="6" PointY="17.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="WardrobeTrackerModel.Embellishment" Width="1.5" PointX="6" PointY="25.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="WardrobeTrackerModel.Footwear" Width="1.5" PointX="3" PointY="16.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="WardrobeTrackerModel.Jewelry" Width="1.5" PointX="3" PointY="25.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="WardrobeTrackerModel.Legwear" Width="1.5" PointX="9" PointY="21.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="WardrobeTrackerModel.Occasion" Width="1.5" PointX="0.75" PointY="17.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="WardrobeTrackerModel.Outfit" Width="1.5" PointX="11.25" PointY="22" IsExpanded="true" />
+        <EntityTypeShape EntityType="WardrobeTrackerModel.Pantaloon" Width="1.5" PointX="9" PointY="17.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="WardrobeTrackerModel.Season" Width="1.5" PointX="0.75" PointY="26.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="WardrobeTrackerModel.Sho" Width="1.5" PointX="9" PointY="25.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="WardrobeTrackerModel.Top" Width="1.5" PointX="3" PointY="29.5" IsExpanded="true" />
+        <AssociationConnector Association="WardrobeTrackerModel.FK_Bottoms_Bottoms" ManuallyRouted="false" />
+        <AssociationConnector Association="WardrobeTrackerModel.FK_Bottoms_Color" ManuallyRouted="false" />
+        <AssociationConnector Association="WardrobeTrackerModel.FK_Bottoms_Description" ManuallyRouted="false" />
+        <AssociationConnector Association="WardrobeTrackerModel.FK_Bottoms_Occasion" ManuallyRouted="false" />
+        <AssociationConnector Association="WardrobeTrackerModel.FK_Bottoms_Season" ManuallyRouted="false" />
+        <AssociationConnector Association="WardrobeTrackerModel.FK_Outfits_Bottoms" ManuallyRouted="false" />
+        <AssociationConnector Association="WardrobeTrackerModel.FK_Coats_Color" ManuallyRouted="false" />
+        <AssociationConnector Association="WardrobeTrackerModel.FK_Coats_Description" ManuallyRouted="false" />
+        <AssociationConnector Association="WardrobeTrackerModel.FK_Coats_Season" ManuallyRouted="false" />
+        <AssociationConnector Association="WardrobeTrackerModel.FK_Dresses_Color" ManuallyRouted="false" />
+        <AssociationConnector Association="WardrobeTrackerModel.FK_Embellishments_Color" ManuallyRouted="false" />
+        <AssociationConnector Association="WardrobeTrackerModel.FK_Footwear_Color" ManuallyRouted="false" />
+        <AssociationConnector Association="WardrobeTrackerModel.FK_Jewelry_Color" ManuallyRouted="false" />
+        <AssociationConnector Association="WardrobeTrackerModel.FK_Legwear_Color" ManuallyRouted="false" />
+        <AssociationConnector Association="WardrobeTrackerModel.FK_Outfits_Color" ManuallyRouted="false" />
+        <AssociationConnector Association="WardrobeTrackerModel.FK_Pantaloons_Color" ManuallyRouted="false" />
+        <AssociationConnector Association="WardrobeTrackerModel.FK_Shoes_Color" ManuallyRouted="false" />
+        <AssociationConnector Association="WardrobeTrackerModel.FK_Tops_Color" ManuallyRouted="false" />
+        <AssociationConnector Association="WardrobeTrackerModel.FK_Dresses_Description" ManuallyRouted="false" />
+        <AssociationConnector Association="WardrobeTrackerModel.FK_Embellishments_Description" ManuallyRouted="false" />
+        <AssociationConnector Association="WardrobeTrackerModel.FK_Footwear_Description" ManuallyRouted="false" />
+        <AssociationConnector Association="WardrobeTrackerModel.FK_Jewelry_Description" ManuallyRouted="false" />
+        <AssociationConnector Association="WardrobeTrackerModel.FK_Legwear_Description" ManuallyRouted="false" />
+        <AssociationConnector Association="WardrobeTrackerModel.FK_Outfits_Coats" ManuallyRouted="false" />
+        <AssociationConnector Association="WardrobeTrackerModel.FK_Outfits_Description" ManuallyRouted="false" />
+        <AssociationConnector Association="WardrobeTrackerModel.FK_Pantaloons_Description" ManuallyRouted="false" />
+        <AssociationConnector Association="WardrobeTrackerModel.FK_Shoes_Description" ManuallyRouted="false" />
+        <AssociationConnector Association="WardrobeTrackerModel.FK_Tops_Description" ManuallyRouted="false" />
+        <AssociationConnector Association="WardrobeTrackerModel.FK_Dresses_Season" ManuallyRouted="false" />
+        <AssociationConnector Association="WardrobeTrackerModel.FK_Outfits_Dresses" ManuallyRouted="false" />
+        <AssociationConnector Association="WardrobeTrackerModel.FK_Embellishments_Occasion" ManuallyRouted="false" />
+        <AssociationConnector Association="WardrobeTrackerModel.FK_Embellishments_Season" ManuallyRouted="false" />
+        <AssociationConnector Association="WardrobeTrackerModel.FK_Footwear_Footwear" ManuallyRouted="false" />
+        <AssociationConnector Association="WardrobeTrackerModel.FK_Footwear_Occasion" ManuallyRouted="false" />
+        <AssociationConnector Association="WardrobeTrackerModel.FK_Footwear_Season" ManuallyRouted="false" />
+        <AssociationConnector Association="WardrobeTrackerModel.FK_Outfits_Jewelry" ManuallyRouted="false" />
+        <AssociationConnector Association="WardrobeTrackerModel.FK_Legwear_Legwear" ManuallyRouted="false" />
+        <AssociationConnector Association="WardrobeTrackerModel.FK_Outfits_Legwear" ManuallyRouted="false" />
+        <AssociationConnector Association="WardrobeTrackerModel.FK_Outfits_Occasion" ManuallyRouted="false" />
+        <AssociationConnector Association="WardrobeTrackerModel.FK_Pantaloons_Occasion" ManuallyRouted="false" />
+        <AssociationConnector Association="WardrobeTrackerModel.FK_Shoes_Occasion" ManuallyRouted="false" />
+        <AssociationConnector Association="WardrobeTrackerModel.FK_Tops_Occasion" ManuallyRouted="false" />
+        <AssociationConnector Association="WardrobeTrackerModel.FK_Outfits_Outfits" ManuallyRouted="false" />
+        <AssociationConnector Association="WardrobeTrackerModel.FK_Outfits_Outfits1" ManuallyRouted="false" />
+        <AssociationConnector Association="WardrobeTrackerModel.FK_Outfits_Season" ManuallyRouted="false" />
+        <AssociationConnector Association="WardrobeTrackerModel.FK_Outfits_Tops" ManuallyRouted="false" />
+        <AssociationConnector Association="WardrobeTrackerModel.FK_Pantaloons_Season" ManuallyRouted="false" />
+        <AssociationConnector Association="WardrobeTrackerModel.FK_Shoes_Season" ManuallyRouted="false" />
+        <AssociationConnector Association="WardrobeTrackerModel.FK_Tops_Season" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,153 @@
+﻿@model IEnumerable<WardrobeTracker.Models.Outfit>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AccessoriesID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.JewelryID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CoatID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ColorID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OccasionID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Photo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Bottom.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Color.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description1.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Dress.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Jewelry.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Legwear.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Legwear1.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Outfits1.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Outfit1.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Outfits11.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Outfit2.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Season.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Top.Name)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AccessoriesID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.JewelryID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CoatID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ColorID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OccasionID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Photo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Bottom.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Color.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Description.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Description1.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Dress.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Jewelry.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Legwear.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Legwear1.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Outfits1.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Outfit1.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Outfits11.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Outfit2.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Season.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Top.Name)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.OutfitsID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.OutfitsID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.OutfitsID })
+        </td>
+    </tr>
+}
+
+</table>
